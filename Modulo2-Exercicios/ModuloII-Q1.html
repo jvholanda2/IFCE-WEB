@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ModuloII-Q1</title>
+	</head>
+	<style>
+		#espaco{
+			padding-bottom: 2000px;
+		}
+		body{
+			padding:5px 5px;
+			border: solid red;
+			margin: 0px;
+		}
+		#divReferencia{
+			border: 3px solid red;
+
+		}
+		#divRelative{
+			position: relative;
+			border: 3px solid red;
+			top: 30px;
+		}
+
+		#divFixed{
+			position: fixed;
+			border: 3px solid red;
+			bottom: 3px;
+			right: 3px;
+			padding: 30px 5px; 
+		}
+
+		#divAbsolut{
+			position: absolute;
+			border: 3px solid green;
+			top: 40px;
+			left: 500px;
+			padding: 0px;
+			margin: 3px;
+			background-color: green;
+		}
+
+		#divSticky{
+			position: sticky;
+			border: 3px solid red;
+			background-color: blue;
+			margin-top: 50px;
+			top: 50px;
+			
+		}
+
+		
+
+		
+	</style>
+	<body>
+		<div id="divReferencia">
+			<h1>Div apenas para referência</h1>
+			
+		</div>
+		<div id="divRelative">
+			<h1>Minha Div Relative</h1>
+			<p>Se posiciona levando em consideração a posição do elemento anterior, nesse caso está sendo a "Div apenas para referência" distanciando 30px no seu topo. Acompanha a rolagem da tela.</p>
+		</div>
+
+		<div id="divFixed">
+			<h2>Minha Div Fixed</h2>
+			<p>Os elementos se mantem fixos na tela, ignorando a rolagem da tela.</p>
+		</div>
+
+		<div id="divAbsolut">
+			<h3>Minha Div Absolut</h3>
+			<p>O elemento se posiciona levando em consideração a pagina como um todo, sobrepondo-se aos outros elementos. Nesse caso 0px de distancia do topo, e 500px de distancia da esqueda. Diferentemente do fixed, acompanhando a rolagem da tela. OBS: caso ela esteja inserida em um "div pai", ela se posicionará em relação a div na qual está inserida.</p>
+		</div>
+
+		<div id="divSticky">
+			<h4>Minha Div Sticky</h4>
+			<p>Elemento que acompanha a rolagem até uma determinada posição definida, quando a atinge comporta-se como fixed. Nesse caso foi definido 50px em relação ao topo da pagina.</p>			
+		</div>
+			
+		<p id="espaco">Parágrafo para gerar espaço para poder rolar a tela.</p>
+		
+
+	</body>
+</html>
